@@ -1,2 +1,12 @@
 <jnt = 'http://www.jahia.org/jahia/nt/1.0'>
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<stnt = 'http://www.jahia.org/jahia/st/nt/1.0'>
+<stmix = 'http://www.jahia.org/jahia/st/mix/1.0'>
+
+[stmix:contents] > jmix:droppableContent mixin
+
+[stnt:html5video] > jnt:content, mix:title, stmix:contents orderable
+ - path_mp4 (weakreference, picker[type='file']) internationalized
+ - path_webm (weakreference, picker[type='file']) internationalized
+ - path_Og (weakreference, picker[type='file']) internationalized
